@@ -1,2 +1,6 @@
-# goodreads-api
-goodreads-api :books:
+# goodreads-api :books:
+
+You need install the dependencies: 
+```
+npm install or yarn install
+```
