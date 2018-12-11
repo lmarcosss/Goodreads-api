@@ -1,4 +1,4 @@
-# goodreads-api :books:
+# Goodreads-api :books:
 
 You need install the dependencies: 
 ```
