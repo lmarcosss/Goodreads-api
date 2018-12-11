@@ -3,8 +3,9 @@ const convert = require("xml-js");
 const express = require("express");
 
 const app = express();
-const key = "KGXBPKnyuYSnSpYDYo7rA";
-const url = "https://www.goodreads.com/search/index.xml";
+const key = "YOUR_KEY_HERE";
+
+const url = "https://www.goodreads.com/search/index.xml"; 
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
