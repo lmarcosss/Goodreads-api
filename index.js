@@ -4,17 +4,7 @@ const express = require("express");
 
 const app = express();
 const key = "YOUR_KEY_HERE";
-
 const url = "https://www.goodreads.com/search/index.xml"; 
-
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
 
 app.get("/book/:isbn", (req, res) => {
   axios.get(`${url}?q=${req.params.isbn}&key=${key}`).then(result => {
